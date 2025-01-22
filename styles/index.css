@@ -1,0 +1,345 @@
+body{
+    background-color: white;
+}
+
+body.active{
+    background-color: #2b2b2b;
+    color: white;
+}
+
+
+#navbar{
+    background-color: white;
+    height: 80px;
+}
+
+#navbar.active{
+    background-color: #2b2b2b;
+    height: 80px;
+    color: white;
+}
+
+.navbar-brand{
+    font-weight: 500;
+    color: rgb(118, 10, 139);
+    font-size: 24px;
+    transition: 0.3s color;
+}
+
+#darkmode_toggle{
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 25px;
+    border-radius: 160px;
+    background: #fff;
+    transition: 0.5s background-color ;
+    cursor: pointer;
+    box-shadow: inset 0 8px 60px rgba(0, 0, 0, 0.1),
+                inset 0 8px 8px rgba(0, 0, 0, 0.1),
+                inset 0 -4px 4px rgba(0, 0, 0, 0.1);
+}
+
+#darkmode_toggle.active{
+    background: #222;
+    box-shadow: inset 0 2px 60px rgba(0, 0, 0, 0.1),
+                inset 0 -4px 8px rgba(0, 0, 0, 0.1),
+                inset 0 -4px 8px rgba(0, 0, 0, 0.05)
+
+}
+
+#darkmode_toggle .indicator{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    background: linear-gradient(to bottom,#eaeaea,#f9f9f9);
+    border-radius: 50%;
+    transform: scale(0.9);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5),
+                inset 0 4px 4px rgba(255, 255, 255, 0.2),
+                inset 0-4px 4px rgba(255, 255, 255, 0.2);
+    transition: 0.5s;
+}
+
+#darkmode_toggle.active .indicator{
+    left: 25px;
+    background: linear-gradient(to bottom,#444,#222);
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.5),
+                inset 0 4px 4px rgba(255, 255, 255, 0.2),
+                inset 0-4px 4px rgba(255, 255, 255, 0.2);
+}
+
+
+.navbar-toggler{
+    border: none;
+    font-size: 1.25rem;
+}
+
+.navbar-toggler:focus,.btn-close:focus{
+    box-shadow: none;
+    outline:none;
+}
+
+.nav-link{
+    color: #666777 ;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link:hover,.nav-link.active{
+    color:  rgb(118, 10, 139);
+}
+
+.home-page{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+}
+
+.home-page-intro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 50px;
+
+}
+
+#profile_pic{
+    width: 500px;
+    clip-path: circle();
+}
+
+.about-page{
+    margin-top: 20px;
+    margin-bottom: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+}
+
+.about-page-aboutme{
+    text-align: center;
+    padding: 40px;
+    border: 3px solid rgb(118, 10, 139);
+    border-radius: 40px;
+}
+
+.about-page-personal{
+    padding: 40px;
+}
+
+.about-page-table{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 1em;
+}
+
+.about-page-table td{
+    padding: 10px 13px;
+}
+
+.about-page-table tr{
+    border-bottom: 1px solid #dddddd;
+}
+
+/* .about-page-table tr:nth-last-of-type(even){
+    background-color: #f3f3f3;
+} */
+
+.favorites-page{
+    margin: 30px;
+}
+
+.favorites-page-row-1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.favorites-page-row-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.fav-grid-1{
+    padding: 5px;
+}
+
+.fav-grid-1-row-1{
+    display: flex;
+    justify-content: center;
+}
+.fav-img-steve-jobs{
+    width: 150px;
+    height: 150px;
+    clip-path: circle();
+}
+
+.fav-grid-1-row-2{
+    text-align: center;
+    margin-top: 15px;
+}
+
+.skills-page{
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 20px;
+}
+
+.skills-page-gird{
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 400px 400px;
+    column-gap: 10px;
+    justify-content: center;
+}
+
+.skills-divs{
+    padding: 10px;
+    border: 4px solid gray;
+    border-radius: 50px;
+}
+
+.skills-h6{
+    text-align: center;
+}
+
+.skills-imgs{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.skills-img-list{
+    list-style: none;
+    padding: 0px;
+}
+
+.skills-img-list li{
+    margin-bottom: 15px;
+} 
+
+.feed-back-form{
+    /* background-color: rgb(32, 14, 36); */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+ .feedback-gird2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ #feedback-container{
+    background-color: white;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 20px;
+    border-radius: 30px;
+    border: 2px solid rgb(118, 10, 139);
+ }
+
+ #feedback-container.active{
+    border: none;
+ }
+
+ .feed-back-contact{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+ }
+
+ .feedback-inputs{
+    width: 400px;
+    height: 50px;
+    border: 1px solid gray;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    border-radius: 50px;
+ }
+
+.feed-back-contact textarea{
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+
+.feedback-inputs:focus{
+    border: 2px solid rgb(118, 10, 139);
+}
+
+.feedback-inputs::placeholder{
+    color: #a9a9a9;
+}
+
+.feed-back-contact button{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: #fff;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(#ff994f,#fa6d86);
+    cursor: pointer;
+}
+
+.feedback-date{
+    text-align: center;
+    color: #a9a9a9;
+    padding-bottom: 10px;
+}
+
+@media (min-width: 991px){
+    .nav-link::before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        height: 2px;
+        background-color: rgb(142, 7, 184);
+        visibility: hidden;
+        transition: 0.15s ease-in-out;
+    }
+
+    .nav-link:hover::before, .nav-link.acrive::before{
+        width: 100%;
+        visibility: visible;
+    }
+}
+
+@media (max-width: 991px){
+    .home-page{
+       display: block;
+       margin-left: 20%;
+       
+    }
+    #profile_pic{
+        width: 300px;
+    }
+    .home-page-intro{
+        margin-top: 25px;
+    }
+    .about-page{
+        display: block;
+    }
+    .fav-img-steve-jobs{
+        width: 100px;
+    }
+    .skills-page-gird{
+        display: grid;
+        grid-template-columns: 200px 200px;
+    }
+}
